@@ -1,4 +1,4 @@
-h4, h5, input, p, button {
+h4, h5, input, p, button, span {
   font-family: "Niramit", sans-serif;
   color: #383838; }
 
@@ -15,8 +15,12 @@ h5 {
   display: flex;
   text-align: center; }
 
+span {
+  font-size: 20px;
+  font-weight: 600; }
+
 form {
-  margin: 0 50px; }
+  margin: 0 25px; }
 
 .boxes {
   display: grid;
@@ -49,6 +53,8 @@ form {
     display: flex;
     justify-content: center;
     align-items: center; }
+  .gender i:active {
+    color: red; }
   .gender p {
     display: flex;
     justify-content: center;
@@ -85,22 +91,24 @@ body {
   grid-template-columns: 40% 60%;
   justify-content: center;
   max-width: 1000px;
-  margin-top: 50px;
-  height: 650px; }
+  margin: 25px 0;
+  height: 600px; }
   .container section:nth-child(1) {
     display: grid;
     align-items: center;
     justify-items: center;
     grid-template-rows: 50% 40%;
     background: #ffd500;
-    border-radius: 30px 0 0 30px; }
+    border-radius: 30px 0 0 30px;
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.12); }
     .container section:nth-child(1) div:nth-child(2) {
       width: 80%; }
   .container section:nth-child(2) {
     display: grid;
     align-items: center;
     background: #ffffff;
-    border-radius: 0 30px 30px 0; }
+    border-radius: 0 30px 30px 0;
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.12); }
     .container section:nth-child(2) div:nth-child(8) {
       display: flex;
       justify-content: center;
@@ -108,8 +116,33 @@ body {
       justify-content: space-around;
       margin-top: 50px; }
 
-img {
+.container img {
   width: 180px;
   border-radius: 50%; }
+
+footer {
+  display: grid;
+  justify-content: center; }
+  footer div:nth-child(1) {
+    font-size: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 5px; }
+    footer div:nth-child(1) a {
+      color: #60e6c5; }
+    footer div:nth-child(1) a:hover {
+      color: #0bb4e2; }
+    footer div:nth-child(1) a:active {
+      color: #c3c3c3; }
+  footer div:nth-child(2) {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  footer img {
+    width: 25px; }
+  footer span {
+    padding: 0 10px; }
 
 /*# sourceMappingURL=styles.css.map */

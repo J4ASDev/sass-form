@@ -1,5 +1,5 @@
 form {
-  margin: 0 50px;
+  margin: 0 25px;
 }
 
 .boxes {
@@ -34,6 +34,10 @@ form {
     background: map-get($grayscale-map, light-gray);
     border-radius: 50%;
     @include center;
+  }
+
+  i:active {
+    color: red;
   }
 
   p {

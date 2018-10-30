@@ -11,9 +11,9 @@ body {
   grid-template-columns: 40% 60%;
   justify-content: center;
   max-width: 1000px;
-  margin-top: 50px;
-  height: 650px;
-
+  margin: 25px 0;
+  height: 600px;
+  
   section:nth-child(1) {
     display: grid;
     align-items: center;
@@ -21,7 +21,8 @@ body {
     grid-template-rows: 50% 40%; 
     background: $background;
     border-radius: 30px 0 0 30px;
-
+    box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.12);
+    
     div:nth-child(2) {
       width: 80%;
     }
@@ -32,7 +33,8 @@ body {
     align-items: center;
     background: map-get($grayscale-map, white );
     border-radius: 0 30px 30px 0;
-
+    box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.12);
+    
     div:nth-child(8) {
       @include center;
       justify-content: space-around;
@@ -42,7 +44,45 @@ body {
 
 }
 
-img {
+.container img {
   width: 180px;
   border-radius: 50%;
+}
+
+footer {
+  display: grid;
+  justify-content: center;
+
+  div:nth-child(1) { 
+    font-size: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 5px;
+
+    a {
+      color: $primary;
+    }
+    
+    a:hover {
+      color: $secondary;
+    }
+
+    a:active {
+      color: map-get($grayscale-map , standard-gray)
+    }
+  }
+  
+  div:nth-child(2) { 
+    @include center
+  }
+  
+  img {
+    width: 25px;
+  }
+
+  span {
+    padding: 0 10px;
+  }
 }
