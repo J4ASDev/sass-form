@@ -1,0 +1,19 @@
+h4, h5, input, p, button {
+  font-family: $font-Niramit;
+  color: map-get($grayscale-map, dark-gray )
+}
+
+h4 {
+  display: flex;
+  justify-content: center;
+  font-size: map-get($fontsSize-map, font-title );
+  margin: 0;
+}
+
+h5 {
+  font-size: map-get($fontsSize-map, half-title );
+  font-weight: 300;
+  line-height: 1.2;
+  display: flex;
+  text-align: center;
+}

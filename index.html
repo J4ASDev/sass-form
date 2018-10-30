@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Formulario</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Niramit:200,400,600" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/styles.css" />
+  </head>
+  <body>
+    <!-- Container -->
+    <div class="container">
+      <!-- Seccion One -->
+      <section>
+        <div>
+          <figure>
+            <img src="./images/profile.jpg" alt="user profile">
+          </figure>
+        </div>
+        <div>
+          <h4>Let's get you set up</h4>
+          <h5>It should only take a couple of minutes to complete the form to continue</h5>
+        </div>
+      </section>
+
+      <!-- Seccion Two -->
+      <section>
+        <form>
+          <!-- Formulary -->
+          <div class="boxes">
+            <p>Name</p>
+            <input class="form-input" type="text" placeholder="Name" required>
+          </div>
+          <div class="boxes">
+            <p>Last Name</p>
+            <input class="form-input" type="text" placeholder="Last Name">
+          </div>
+          <div class="boxes">
+            <p>Gender</p>
+            <div class="gender">
+              <i class="fas fa-mars"></i>
+              <p>Male</p>
+              <i class="fas fa-venus"></i>
+              <p>Female</p>
+            </div>
+          </div>
+          <div class="boxes">
+            <p>Date of birth</p>
+            <input class="form-input" type="date" id="party" name="party" min="2000-00-00" max="2020-00-00">
+          </div>
+          <div class="boxes">
+            <p>Email</p>
+            <input class="form-input" type="email" placeholder="Email@example.com" required>
+          </div>
+          <div class="boxes">
+            <p>Mobile</p>
+            <input class="form-input" type="tel" placeholder="012-3456-7890">
+          </div>
+          <div class="boxes">
+            <p>Password</p>
+            <input class="form-input" type="password" pattern=".{6,}" required>
+          </div>
+
+          <!-- Buttons -->
+          <div>
+            <button>CANCEL</button>
+            <button type="submit">SAVE</button>
+          </div>
+        </form>
+      </section>
+
+    </div>
+  </body>
+</html>

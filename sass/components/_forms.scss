@@ -1,0 +1,42 @@
+form {
+  margin: 0 50px;
+}
+
+.boxes {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 30% 60%;
+  margin: 20px 0px;
+
+  p {
+    margin: 0;
+  }
+}
+
+.form-input {
+  @include form-inputs;
+}
+
+.form-input:focus {
+  background: lighten(map-get($grayscale-map, light-gray), 2% );
+  outline: 1px solid $primary;
+}
+
+.gender {
+  height: 50px;
+  display: grid;
+  grid-template-columns: 50px 20% 50px 20%;
+
+  i {
+    font-size: map-get($fontsSize-map, alternative );
+    color: darken(map-get($grayscale-map, light-gray), 30% );
+    background: map-get($grayscale-map, light-gray);
+    border-radius: 50%;
+    @include center;
+  }
+
+  p {
+    @include center;
+  }
+}

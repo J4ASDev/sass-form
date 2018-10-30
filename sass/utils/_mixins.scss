@@ -1,0 +1,17 @@
+@mixin paragraphs {
+  font-size: map-get($fontsSize-map, paragraphs);
+  font-family: $font-Niramit;
+}
+
+@mixin form-inputs {
+  background: map-get($grayscale-map, light-gray);
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+@mixin center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

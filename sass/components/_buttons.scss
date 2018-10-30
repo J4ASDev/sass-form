@@ -1,0 +1,22 @@
+button {
+  width: 150px;
+  height: 50px;
+  font-size: map-get($fontsSize-map , paragraphs );
+  border: none;
+  border-radius: 10px;
+  outline: none;
+}
+
+button:active {
+  background: map-get($grayscale-map , standard-gray)
+}
+
+button[type="submit"] {
+  color: map-get($grayscale-map , white );
+  background: $primary;
+}
+
+button[type="submit"]:active {
+  color: map-get($grayscale-map, light-gray );
+  background: $secondary;
+}
