@@ -18,6 +18,10 @@ h5 {
   text-align: center;
 }
 
+button {
+  font-size: map-get($fontsSize-map , paragraphs );
+}
+
 span {
   font-size: map-get($fontsSize-map, half-title );
   font-weight: 600;

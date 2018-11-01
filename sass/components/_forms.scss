@@ -20,7 +20,7 @@ form {
 
 .form-input:focus {
   background: lighten(map-get($grayscale-map, light-gray), 2% );
-  outline: 1px solid $primary;
+  outline: 1px solid $color-primary;
 }
 
 .gender {
@@ -37,7 +37,7 @@ form {
   }
 
   i:active {
-    color: red;
+    color: map-get($grayscale-map , standard-gray)
   }
 
   p {
